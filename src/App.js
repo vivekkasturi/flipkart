@@ -1,13 +1,9 @@
 import './App.css';
+import Footerbtm from './components/Footerbtm';
 
 function App() {
   return (
-    <div className="App">
-     
-          Learn React from created new pull request
-  
-
-    </div>
+    <Footerbtm />
   );
 }
 
