@@ -6,7 +6,7 @@ function App() {
      
           Learn React from created new pull request
   
-  
+
     </div>
   );
 }
