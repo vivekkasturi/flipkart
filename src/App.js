@@ -4,6 +4,7 @@ import Footerbtm from './components/Footerbtm';
 function App() {
   return (
     <Footerbtm />
+    
   );
 }
 
