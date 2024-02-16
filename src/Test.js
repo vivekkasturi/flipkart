@@ -8,7 +8,7 @@ Test.propTypes = {
 function Test() {
     return (
         <div>
-            <h1>Test file</h1>
+            <h1>Test file from created new branch with name testpr</h1>
         </div>
     );
 }
