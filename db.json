@@ -28,7 +28,7 @@
   "products": [
     {
       "id": 1,
-      "title": "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
+      "title": "Fjallraven",
       "price": 109.95,
       "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
       "category": "men's clothing",
@@ -268,10 +268,46 @@
     }
   ],
   "FooterBtm": [
-    "Become a Seller",
-    "Advertise",
-    "Gift Cards",
-    "Help Center",
-    "2007-2024 Flipkart.com"
+    {
+      "id": 1,
+      "title": "Become a Seller",
+      "url": "https://google.com"
+    },
+    {
+      "id": 2,
+      "title": "Advertise",
+      "url": "https://google.com"
+    },
+    {
+      "id": 3,
+      "title": "Gift Cards",
+      "url": "https://google.com"
+    },
+    {
+      "id": 4,
+      "title": "Help Center",
+      "url": "https://google.com"
+    },
+    {
+      "id": 5,
+      "title": "2007-2024 Flipkart.com",
+      "url": "https://google.com"
+    }
+  ],
+
+  "Carousel": [
+    {
+      "id": 1,
+      "img": "https://rukminim2.flixcart.com/fk-p-flap/1600/270/image/8f317257ae9d9789.jpeg?q=20"
+    },
+    {
+      "id": 2,
+      "img": "https://rukminim2.flixcart.com/fk-p-flap/1600/270/image/7fd0e4ab26429926.jpg?q=20"
+    },
+    {
+      "id": 3,
+      "img": "https://rukminim2.flixcart.com/fk-p-flap/1600/270/image/d05c680ac784bef4.png?q=20"
+    }
   ]
+
 }

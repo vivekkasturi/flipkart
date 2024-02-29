@@ -1,4 +1,4 @@
-import Rootreducer from "./reducers/Rootreducer";
+import Rootreducer from "./reducers/RootReducer";
 import { legacy_createStore as createStore } from 'redux';
 import {thunk} from "redux-thunk";
 import { applyMiddleware, compose } from "redux";

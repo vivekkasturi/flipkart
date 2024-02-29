@@ -1,8 +1,79 @@
-.footerbtm{
+.footerbtm {
   background-color: #666;
   color: white;
-  height: 50px;
   padding: 25px;
   margin: 1px;
-  
+  display: flex;
+  justify-content: space-between;
+  /* Aligns items with space between them */
+  align-items: center;
+  /* Aligns items vertically */
+}
+
+.footerbtm-content {
+  display: flex;
+  /* Ensures child elements are in a row */
+}
+
+.footerbtmarray {
+  white-space: nowrap;
+  margin-right: 30px;
+  cursor: pointer;
+}
+
+.footerbtmarray a {
+  color: white;
+  text-decoration: none;
+}
+
+.footerCardIcon {
+  display: flex;
+  /* Ensures child elements are in a row */
+
+}
+
+.footer-icon {
+  margin-right: 5px;
+}
+
+.Header {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  align-items: baseline;
+}
+
+.SearchBox input {
+  border: 1px;
+  border-radius: 1px;
+  width: 300px;
+  height: 25px;
+  cursor: pointer;
+}
+
+
+.CarouselMain {
+  background-color: white;
+  color: black;
+  width: 1000px;
+
+}
+
+.CarouselMain img {
+display: flex;
+content: center;
+
+}
+.carouselExampleControls {
+
+  display: flex;
+  text-align: center;
+
+}
+
+.DotsIcon .dropdown {
+  color: black;
+  background-color: white;
+  cursor: pointer;
+  border: none;
 }
