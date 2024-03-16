@@ -40,7 +40,7 @@
     },
     {
       "id": 2,
-      "title": "Mens Casual Premium Slim Fit T-Shirts ",
+      "title": "Mens",
       "price": 22.3,
       "description": "Slim-fitting style, contrast raglan long sleeve, three-button henley placket, light weight & soft fabric for breathable and comfortable wearing. And Solid stitched shirts with round neck made for durability and a great fit for casual fashion wear and diehard baseball fans. The Henley style round neckline includes a three-button placket.",
       "category": "men's clothing",
@@ -292,6 +292,29 @@
       "id": 5,
       "title": "2007-2024 Flipkart.com",
       "url": "https://google.com"
+    }
+  ],
+
+  "FooterHeader": [
+    {
+      "id": 1,
+      "title": "About Us",
+      "Description":["Contact us","Contact us1","Contact us2","Contact us3"]
+    },
+    {
+      "id": 2,
+      "title": "About Us",
+      "Description":["Contact us","Contact us1","Contact us2","Contact us3"]
+    },
+    {
+      "id": 3,
+      "title": "About Us",
+      "Description":["Contact us","Contact us1","Contact us2","Contact us3"]
+    },
+    {
+      "id": 4,
+      "title": "About Us",
+      "Description":["Contact us","Contact us1","Contact us2","Contact us3"]
     }
   ],
 

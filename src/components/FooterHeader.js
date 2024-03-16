@@ -5,51 +5,34 @@ export default function FooterHeader() {
     const dispatch = useDispatch();
     const footerHeaderArray = useSelector((state) => state.Footerbtm.footerHeaderArray);
 
-//useEffect
-useEffect(()=>{
-    dispatch(FooterHeader1());
+    //useEffect
+    useEffect(() => {
+        dispatch(FooterHeader1());
 
-    console.log(footerHeaderArray);
-}, []);
- 
+        console.log(footerHeaderArray);
+    }, []);
+
 
     return (
 
         <div className="FooterHeader">
             {
-                footerHeaderArray.map((data, index) => {
-
-                    return (
-
-                        <div className="FooterHeader_inner">
-                          
-                           {data.Description.map((data)=>{ return(
-                            <div>
-                                <li>{data}</li>
-                                </div>
-                           )})}
-
-                        </div>
+                footerHeaderArray.map((item) => (
+                    <div className="innerFooterHeaderEle" key={item.id}>
+                        <span >{item.title}</span>
+                            {item.Description.map((desc, index) => (
+                                
+                                <li key={index} >{desc}</li>
+                            ))}
+                 
+                    </div>
                     )
-                })
+                )
+                
             }
-             {
-                footerHeaderArray.map((data, index) => {
 
-                    return (
 
-                        <div className="FooterHeader_inner">
-                          
-                           {data.Description.map((data)=>{ return(
-                            <div>
-                                <li>{data}</li>
-                                </div>
-                           )})}
 
-                        </div>
-                    )
-                })
-            }
         </div>
     )
 }

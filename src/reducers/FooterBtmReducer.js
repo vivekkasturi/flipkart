@@ -1,6 +1,7 @@
 const initalState = {
 
-    footerbtmarray: []
+    footerbtmarray: [],
+    footerHeaderArray:[]
 }
 
 // eslint-disable-next-line import/no-anonymous-default-export
@@ -16,8 +17,18 @@ export default function (state = initalState, action) {
         }
 
     }
-    console.log(state);
-    return state;
 
+ else if(action.type === "API Fotter Header Data") {
+
+
+    return {
+        ...state,
+        footerHeaderArray: action.payload
+
+    }
+
+}
+
+return state
 
 }

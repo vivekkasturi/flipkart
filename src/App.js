@@ -1,19 +1,18 @@
 import './App.css';
-import Footerbtm from './components/Footerbtm';
-import Header from './components/Header/Header';
-import Carousel from './components/Carousel';
-import Categories from './components/Categories/Categories';
-import Filter from './components/Filter';
+import Main1 from './Main1.js';
+import ProductsAdmin from './components/Products/ProductsAdmin';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <>
-      <Header />
-      <Carousel />
-      <Categories />
-      <Filter />
-      <Footerbtm />
 
+      <BrowserRouter>
+        <Routes>
+          <Route path="/products/admin" element={<ProductsAdmin />} />
+          <Route path="/" element={<Main1 />} />
+        </Routes>
+      </BrowserRouter>
     </>
 
   );

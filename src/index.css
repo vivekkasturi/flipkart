@@ -77,3 +77,20 @@ content: center;
   cursor: pointer;
   border: none;
 }
+
+.FooterHeader{
+  
+display: flex;
+background-color: #666;
+padding: 1px;
+color: white;
+}
+
+.FooterHeader .innerFooterHeaderEle{
+
+  list-style-type: none;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+
+}

@@ -10,26 +10,28 @@ export default function Header() {
   const [inputDisplay, setInputDisplay] = useState("");
   const [dropdown, setDropdown] = useState(false);
   const dispatch = useDispatch();
+  const [data, setData] = useState("");
 
   useEffect(() => {
     dispatch(HeaderSearchBox());
   }, []);
 
   const SearchBox = (event) => {
+    setData(event.target.value);
 
     console.log("testing", event.target.value);
-
+    
     if (event.target.value != null) {
-      productsapiData.find((pd) => {
-        if (pd.title === event.target.value) {
+      const test = productsapiData.find((pd) => {
+
+        if (pd.title.substring(0,3) === event.target.value || pd.title === event.target.value) {
           setDropdown(true);
           setInputDisplay(pd.price);
           console.log("a", inputDisplay);
           return setInputDisplay(pd.price)
         }
-
-        // setDropdown(false);
       })
+      console.log("t", test);
     }
     if (event.target.value === "") {
       setDropdown(false);
@@ -39,6 +41,20 @@ export default function Header() {
   }
 
 
+const debounceSearchBox = debounce(SearchBox, 1000);
+
+function debounce(fn, delay){
+  let timeoutId = null;
+
+  return function (...args){
+    clearTimeout(timeoutId);
+  
+    timeoutId = setTimeout(()=>{
+      fn.apply(null, args);
+    }, delay)
+  }
+}
+
   return (
     <div className='Header'>
       <div className='BrandName'>
@@ -46,7 +62,7 @@ export default function Header() {
       </div>
       <div className='SearchBox'>
 
-        <span> <FontAwesomeIcon icon="fa-solid fa-magnifying-glass" size="lg" className='MagnifyingIcon' /> <input type='text' placeholder='Search for Produts, Brands and more' onChange={(event) => SearchBox(event)} /></span>
+        <span> <FontAwesomeIcon icon="fa-solid fa-magnifying-glass" size="lg" className='MagnifyingIcon' /> <input type='text' placeholder='Search for Produts, Brands and more' onChange={(event) => debounceSearchBox(event)} /></span>
         {dropdown && dropdown ? (
           <div className='Dropdown'>
 
@@ -93,6 +109,24 @@ export default function Header() {
         </div>
       </div>
 
+      <div class="dropdown">
+<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+  Parent Dropdown
+</button>
+<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+  <li><a class="dropdown-item" href="#">Action</a></li>
+  <li><a class="dropdown-item" href="#">Another action</a></li>
+  <li class="dropdown">
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="nestedDropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+      Nested Dropdown
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="nestedDropdownMenuButton">
+      <li><a class="dropdown-item" href="#">Nested Action 1</a></li>
+      <li><a class="dropdown-item" href="#">Nested Action 2</a></li>
+    </ul>
+  </li>
+</ul>
+</div>
 
     </div>
 
